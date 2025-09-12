@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increase Font Size</title>
+</head>
+<body>
+    <p class="note">This is a note 1.</p>
+<p>This is regular text.</p>
+<p class="note">This is a note 2.</p>
+
+<button onclick="increaseFontSize()">Increase Font Size</button>
+
+<script>
+  function increaseFontSize() 
+  {
+    const notes = document.getElementsByClassName("note");
+    for (let i = 0; i < notes.length; i++) 
+    {
+      notes[i].style.fontSize = "24px";
+    }
+  }
+</script>
+</body>
+</html>

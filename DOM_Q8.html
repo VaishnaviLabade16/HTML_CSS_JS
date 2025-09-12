@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Items</title>
+</head>
+<body>
+    <div class="item">Item 1</div>
+<div class="item">Item 2</div>
+<div class="item">Item 3</div>
+
+<br>
+<button onclick="countItems()">Count Items</button>
+
+<script>
+  function countItems() 
+  {
+    const items = document.getElementsByClassName("item");
+    alert("Total number of items: " + items.length);
+  }
+</script>
+</body>
+</html>
