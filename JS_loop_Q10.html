@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime numbers between 1 and 100</title>
+</head>
+<body>
+    <h1>prime numbers between 1 and 100</h1>
+    <script>
+       // Program to print prime numbers between 1 and 100 using nested for loops
+
+ for (let num = 2; num <= 100; num++) 
+ {
+  let isPrime = true;
+
+  // Check for factors using inner loop
+  for (let i = 2; i < num; i++) 
+  {
+    if (num % i === 0) 
+    {
+      isPrime = false; // Not a prime
+      break;           // Exit inner loop early
+    }
+  }
+
+  if (isPrime) 
+  {
+    console.log(num); // Print the prime number
+  }
+ }
+
+    </script>
+</body>
+</html>

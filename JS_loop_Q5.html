@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse number</title>
+</head>
+<body>
+    <h1>Reverse number program output check in console...</h1>
+    <script>
+        function reverseNumber(num) 
+        {
+          let reversed = 0;
+
+            // Handle negative numbers
+             const isNegative = num < 0;
+             num = Math.abs(num);
+
+             while (num > 0) 
+             {
+              let digit = num % 10;           // Get the last digit
+              reversed = reversed * 10 + digit; // Add digit to reversed number
+             num = Math.floor(num / 10);     // Remove the last digit
+             }
+
+           return isNegative ? -reversed : reversed;
+        }
+
+        // Example usage:
+     let number = 12345;
+     console.log("Original number:", number);
+     console.log("Reversed number:", reverseNumber(number));
+
+    </script>
+</body>
+</html>

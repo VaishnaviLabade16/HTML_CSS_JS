@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power</title>
+</head>
+<body>
+    <h1>calculate power program output on console...</h1>
+    <script>
+        // Function to calculate power using a for loop
+function power(base, exponent) {
+  let result = 1;
+
+  // Handle negative exponents
+  let isNegative = false;
+  if (exponent < 0) {
+    isNegative = true;
+    exponent = -exponent;
+  }
+
+  // Multiply base by itself exponent times
+  for (let i = 0; i < exponent; i++) {
+    result *= base;
+  }
+
+  // If exponent was negative, take reciprocal
+  if (isNegative) {
+    result = 1 / result;
+  }
+
+  return result;
+}
+
+// Example usage
+let base = 2;
+let exponent = 3;
+
+console.log(base + " raised to the power of " + exponent + " is: " + power(base, exponent));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count digits</title>
+</head>
+<body>
+  <script>
+    // Function to count digits using a while loop
+     function countDigits(number) 
+     {
+      // Handle negative numbers
+      number = Math.abs(number);
+
+     // Special case for 0
+       if (number == 0) 
+       return 1;
+
+       let count = 0;
+
+      while (number > 0) 
+      {
+      number = Math.floor(number / 10); // Remove the last digit
+      count++;
+      }
+
+  return count;
+}
+
+   // Example usage
+   let num = 123456;
+  console.log("Number of digits in " + num + " is: " + countDigits(num));
+
+  </script>
+</body>
+</html>

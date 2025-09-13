@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci seris</title>
+</head>
+<body>
+    <h1>Fibonacci seris check output in console...</h1>
+    <script>
+        // Prompt the user to enter the upper limit
+           let limit = parseInt(prompt("Enter a number to generate Fibonacci series up to:"));
+
+            let a = 0, b = 1;
+            console.log("Fibonacci series up to " + limit + ":");
+
+        // Print the first Fibonacci number if within limit
+          if (limit >= 0)
+          {
+              console.log(a);
+          }
+
+        // Print the second Fibonacci number if within limit
+           if (limit >= 1) 
+          {
+              console.log(b);
+          }
+
+        // Use for loop to generate the rest of the series
+           for (let next = a + b; next <= limit; next = a + b) 
+            {
+               console.log(next);
+                a = b;
+                b = next;
+            }
+
+    </script>
+</body>
+</html>
