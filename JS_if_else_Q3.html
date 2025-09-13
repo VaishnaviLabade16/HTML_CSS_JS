@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vowel or consonant</title>
+</head>
+<body>
+    <h1>vowel or consonant...</h1>
+    <script>
+        // Prompt the user to enter a character
+let char = prompt("Enter a single letter:");
+
+// Convert to lowercase for consistency
+char = char.toLowerCase();
+
+// Check if the input is a single alphabet character
+if (char.length === 1 && char >= 'a' && char <= 'z') {
+    // Check for vowels
+    if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+        alert(char + " is a vowel.");
+    } else {
+        alert(char + " is a consonant.");
+    }
+} else {
+    alert("Invalid input. Please enter a single alphabet letter.");
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome or not</title>
+</head>
+<body>
+    <h1>Palindrome or not...</h1>
+    <script>
+        // Prompt the user to enter a string
+           let input = prompt("Enter a string:");
+
+         // Convert the string to lowercase and remove non-alphanumeric characters
+            let cleanInput = input.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+          // Reverse the cleaned string
+             let reversed = "";
+             for (let i = cleanInput.length - 1; i >= 0; i--) 
+             {
+               reversed += cleanInput[i];
+             }
+
+          // Check if the original cleaned string is equal to its reversed version
+            if (cleanInput === reversed) 
+            {
+             alert("The string is a palindrome.");
+           } 
+           else 
+           {
+             alert("The string is not a palindrome.");
+           }
+
+    </script>
+</body>
+</html>

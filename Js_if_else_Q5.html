@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks</title>
+</head>
+<body>
+    <h1> Write a JavaScript program to find the grade of a student based on marks entered by the user. Use the following conditions:
+                                        Marks > 90: Grade A
+                                        Marks > 75: Grade B
+                                        Marks > 50: Grade C
+                                        Marks <= 50: Grade D
+    </h1>
+    <script>
+        // Prompt the user to enter the marks
+         let marks = parseFloat(prompt("Enter your marks (0 - 100):"));
+
+        // Check if the input is a valid number within the range
+         if (marks >= 0 && marks <= 100) 
+         {
+        // Determine the grade based on the marks
+            if (marks > 90) 
+            {
+              alert("Grade: A");
+            }
+            else if (marks > 75) 
+            {
+              alert("Grade: B");
+            } 
+            else if (marks > 50) 
+            {
+              alert("Grade: C");
+            } 
+            else 
+            {
+              alert("Grade: D");
+            }
+        } 
+        else 
+        {
+          alert("Invalid input. Please enter marks between 0 and 100.");
+        s}
+
+    </script>
+</body>
+</html>

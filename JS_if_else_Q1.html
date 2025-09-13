@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largest of three numbers</title>
+</head>
+<body>
+    <h1>largest of three numbers</h1>
+    <script>
+        // Prompt the user to enter three numbers
+       let num1 = parseFloat(prompt("Enter the first number:"));
+       let num2 = parseFloat(prompt("Enter the second number:"));
+       let num3 = parseFloat(prompt("Enter the third number:"));
+
+        let largest;
+
+       // Compare the numbers using if-else statements
+         if (num1 >= num2 && num1 >= num3) 
+         {
+            largest = num1;
+         } 
+         else if (num2 >= num1 && num2 >= num3) 
+         {
+           largest = num2;
+         }
+        else
+           {
+             largest = num3;
+           }
+
+         // Display the result
+         alert("The largest number is: " + largest);
+
+    </script>
+</body>
+</html>
