@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade</title>
+</head>
+<body>
+    <h1>Grade</h1>
+    <script>
+        // Prompt the user to enter a grade
+          let grade = prompt("Enter a grade (A, B, C, D, F):");
+
+        // Convert the input to uppercase to handle lowercase entries
+           grade = grade.toUpperCase();
+
+           let description;
+
+        // Use switch to determine the grade description
+        switch (grade) {
+          case "A":
+               description = "Excellent";
+               break;
+          case "B":
+               description = "Good";
+               break;
+          case "C":
+               description = "Average";
+               break;
+          case "D":
+               description = "Poor";
+               break;
+          case "F":
+               description = "Fail";
+               break;
+          default:
+              description = "Invalid grade entered. Please enter A, B, C, D, or F.";
+}
+
+// Show the result
+alert(description);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic oprations</title>
+</head>
+<body>
+    <h1>Arithmetic oprations</h1>
+    <script>
+        // Prompt the user to enter two numbers
+          let num1 = parseFloat(prompt("Enter the first number:"));
+          let num2 = parseFloat(prompt("Enter the second number:"));
+
+        // Prompt the user to choose an operation
+           let operation = prompt("Choose an operation (+, -, *, /):");
+
+           let result;
+
+       // Perform the operation using switch
+        switch (operation) {
+        case "+":
+           result = num1 + num2;
+           alert("Result: " + result);
+         break;
+        case "-":
+            result = num1 - num2;
+            alert("Result: " + result);
+         break;
+        case "*":
+             result = num1 * num2;
+             alert("Result: " + result);
+         break;
+        case "/":
+              if (num2 !== 0) 
+              {
+              result = num1 / num2;
+              alert("Result: " + result);
+              } 
+              else 
+              {
+                alert("Error: Division by zero is not allowed.");
+              }
+              break;
+        default:
+           alert("Invalid operation. Please enter +, -, *, or /.");
+}
+
+    </script>
+</body>
+</html>
